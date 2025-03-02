@@ -8,8 +8,6 @@ function changebackgroundcolor(){
 function removeitem(){
     
     let element= document.getElementById('activity-logs');
-    if(element){
-        element.remove();
-        
-    }
+    
+    element.innerHTML = ""
 }
