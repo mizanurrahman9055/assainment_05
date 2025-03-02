@@ -10,11 +10,11 @@
 </head>
 <body class="bg-gray-100 p-6">
 
-  <!-- Main Container -->
+  
   <div class="max-w-6xl mx-auto bg-white p-6 rounded-lg shadow-lg">
 
-      <!-- Header Section -->
-      <nav class="flex justify-between mx-4 my-4">
+     
+      <nav class="flex justify-between mx-4 my-4 bg-gray-50 rounded">
         <div class="flex items-center">
          <img src="./assets/logo.png" alt="">
          <h1 class="text-center text-2xl">Dev<span class="font-bold text-2xl">Board</span></h1>
@@ -22,18 +22,18 @@
         <div class="flex items-center gap-4">
          <div class="flex items-center">
            <img src="./assets/checkbox.png" alt="">
-           <p class="text-2xl">23</p>
+           <p id="nav-increase" class="text-2xl">23</p>
          </div>
          <div>
-           <button><img src="./assets/theme-btn.png" alt=""></button>
+           <button onclick="changebackgroundcolor()"><img src="./assets/theme-btn.png" alt=""></button>
          </div>
         </div>
     </nav>
-      <!-- Notification Banner -->
+      
       
      <div class="flex gap-2">
       <div>
-        <!-- Task Info -->
+        
         <div class=" grid grid-cols-3 gap-2">
          <div class="flex bg-gray-100 p-4 rounded-lg items-center gap-2">
              <div>
@@ -41,10 +41,10 @@
              </div>
              <div>
                <p class="text-3xl font-semibold">Task Assigned</p>
-               <p class="text-3xl font-bold text-blue">06</p>     
+               <p id="task-as" class="text-3xl font-bold text-blue">06</p>     
              </div>
           </div>
-         <div class="flex items-center p-4 bg-blue-500 text-white text-center rounded-lg">
+         <div onclick="goToPage()" class="flex items-center p-4 bg-blue-500 text-white text-center rounded-lg">
            <div>
              <img src="./assets/board.png" alt="">
            </div>
@@ -57,78 +57,78 @@
                <img src="./assets/calender.png" alt="">
              </div>
              <div>
-               <p class="text-lg font-semibold">Wed,</p>
-              <p class="text-2xl font-bold ">Jul 28 2025</p>
+               
+              <p id="dateDisplay" class="text-2xl font-bold "></p>
              </div>
          </div>
      </div>
  
-     <!-- Task Cards -->
+     
      <div class="grid grid-cols-3 gap-4 mt-6">
          <div class="bg-gray-50 p-4 rounded-lg shadow">
              <p class="text-sm text-gray-500">ShopEase</p>
-             <h3 class="font-bold">Fix Mobile Button Issue</h3>
+             <h3 id="fix-mobile" class="font-bold">Fix Mobile Button Issue</h3>
              <p class="text-gray-600 text-sm mt-2">Debug using Chrome DevTools,<br> check for overlapping .....</p>
              <div class="pt-4 flex justify-between items-center">
                <p class="text-xs text-gray-400 mt-2">Deadline: <br> 21 March 2025</p>
-             <button class="mt-3 px-4 py-1 bg-blue-600 text-white rounded">Completed</button>
+             <button id="btn-1" class="mt-3 px-4 py-1 bg-blue-600 text-white rounded">Completed</button>
              </div>
          </div>
  
          <div class="bg-gray-50 p-4 rounded-lg shadow">
              <p class="text-sm text-gray-500">CloudSync</p>
-             <h3 class="font-bold">Add Dark Mode</h3>
+             <h3 id="dark-mode" class="font-bold">Add Dark Mode</h3>
              <p class="text-gray-600 text-sm mt-2">Store the user's preference in <br> localStorage, update CSS ....</p>
              <div class="pt-4 flex justify-between items-center">
                <p class="text-xs text-gray-400 mt-2">Deadline: <br> 21 March 2025</p>
-             <button class="mt-3 px-4 py-1 bg-blue-600 text-white rounded">Completed</button>
+             <button id="btn-2" class="mt-3 px-4 py-1 bg-blue-600 text-white rounded">Completed</button>
              </div>
          </div>
  
          <div class="bg-gray-50 p-4 rounded-lg shadow">
              <p class="text-sm text-gray-500">SwiftPay</p>
-             <h3 class="font-bold">Optimize Home Page</h3>
+             <h3 id="optimize" class="font-bold">Optimize Home Page</h3>
              <p class="text-gray-600 text-sm mt-2">Debug using Chrome DevTools,<br> check for overlapping .....</p>
              <div class="pt-4 flex justify-between items-center">
                <p class="text-xs text-gray-400 mt-2">Deadline: <br> 21 March 2025</p>
-             <button class="mt-3 px-4 py-1 bg-blue-600 text-white rounded">Completed</button>
+             <button id="btn-3" class="mt-3 px-4 py-1 bg-blue-600 text-white rounded">Completed</button>
              </div>
          </div>
  
          <div class="bg-gray-50 p-4 rounded-lg shadow">
              <p class="text-sm text-gray-500">Meta</p>
-             <h3 class="font-bold">Add new emoji</h3>
+             <h3 id="emoji" class="font-bold">Add new emoji</h3>
              <p class="text-gray-600 text-sm mt-2">Debug using Chrome DevTools,<br> check for overlapping .....</p>
              <div class="pt-4 flex justify-between items-center">
                <p class="text-xs text-gray-400 mt-2">Deadline: <br> 21 March 2025</p>
-             <button class="mt-3 px-4 py-1 bg-blue-600 text-white rounded">Completed</button>
+             <button id="btn-4" class="mt-3 px-4 py-1 bg-blue-600 text-white rounded">Completed</button>
              </div>
          </div>
  
          <div class="bg-gray-50 p-4 rounded-lg shadow">
              <p class="text-sm text-gray-500">Google LLC</p>
-             <h3 class="font-bold">Integrate OpenAI API</h3>
+             <h3 id="integrate" class="font-bold">Integrate OpenAI API</h3>
              <p class="text-gray-600 text-sm mt-2">Debug using Chrome DevTools,<br> check for overlapping .....</p>
              <div class="pt-4 flex justify-between items-center">
                <p class="text-xs text-gray-400 mt-2">Deadline: <br> 21 March 2025</p>
-             <button class="mt-3 px-4 py-1 bg-blue-600 text-white rounded">Completed</button>
+             <button id="btn-5" class="mt-3 px-4 py-1 bg-blue-600 text-white rounded">Completed</button>
              </div>
          </div>
  
          <div class="bg-gray-50 p-4 rounded-lg shadow">
              <p class="text-sm text-gray-500">Glassdoor</p>
-             <h3 class="font-bold">Improve Job Searching</h3>
+             <h3 id="improve" class="font-bold">Improve Job Searching</h3>
              <p class="text-gray-600 text-sm mt-2">Debug using Chrome DevTools,<br> check for overlapping .....</p>
              <div class="pt-4 flex justify-between items-center">
                <p class="text-xs text-gray-400 mt-2">Deadline: <br> 21 March 2025</p>
-             <button class="mt-3 px-4 py-1 bg-blue-600 text-white rounded">Completed</button>
+             <button id="btn-6" class="mt-3 px-4 py-1 bg-blue-600 text-white rounded">Completed</button>
              </div>
          </div>
      </div>
  
       </div>
       
-       <!-- Activity Log -->
+       
        <div class="mt-6 max-w-40">
            <div class="text-center ">
             <div class="flex items-center gap-2">
@@ -139,15 +139,18 @@
                 <h2 class="text-lg font-bold">Activity Log</h2>
               </div>
             </div>
-            <button id="clearLog" class="mt-2 px-4 py-1 bg-blue-500 text-white rounded">Clear History</button>
+            <button onclick="removeitem()" class="mt-2 px-4 py-1 bg-blue-500 text-white rounded">Clear History</button>
            </div>
-           <ul id="logList" class="mt-3 text-gray-600">
-               <li>You have completed the task Add Dark Mode at 12:48:15 PM</li>
-               <li>You have completed the task Optimize Home Page at 12:50:00 PM</li>
+           <ul id="activity-logs" class="mt-3 text-gray-600">
+               
            </ul>
        </div>
      </div>
 
   </div>
+  <script src="./script/blogs.js"></script>
+  <script src="./script/activitylog.js"></script>
+  <script src="./script/remove.js"></script>
+  <script src="./script/updatedate.js"></script>
 </body>
 </html>
